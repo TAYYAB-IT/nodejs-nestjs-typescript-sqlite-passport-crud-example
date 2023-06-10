@@ -21,7 +21,7 @@ export class CommonAuthService {
       .digest('hex');
   }
 
-  public getIp(request: IPayload): string {
+  public getIp(request: any): string {
     try {
       const ip = requestIp.getClientIp(request);
 
